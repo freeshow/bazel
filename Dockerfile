@@ -48,7 +48,7 @@ RUN mkdir /bazel && \
     rm -f /bazel/bazel-$BAZEL_VERSION-installer-linux-x86_64.sh
 	
 RUN git clone --recurse-submodules https://github.com/tensorflow/serving
-RUN /serving/tensorflow/configure
+#RUN /serving/tensorflow/configure
 
 CMD ["/bin/bash"]
 
